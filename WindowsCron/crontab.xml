@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<setting>
+	<sample name="サンプル">
+		<explain value="書式サンプル" />
+		<timing>
+			<minutes value="*" />
+			<hour value="*" />
+			<day value="*" />
+			<month value="*" />
+			<week value="*" />
+		</timing>
+		<command value="コマンド" param="パラメータ" />
+		<enable value="false" />
+	</sample>
+	<cron name="none1">
+		<explain value="デバッグサンプル1" />
+		<timing>
+			<minutes value="*" />
+			<hour value="*" />
+			<day value="*" />
+			<month value="*" />
+			<week value="*" />
+		</timing>
+		<command value="script/none/none.ps1" param="sample1" />
+		<enable value="true" />
+	</cron>
+	<cron name="none2">
+		<explain value="デバッグサンプル2" />
+		<timing>
+			<minutes value="*/10" />
+			<hour value="*" />
+			<day value="*" />
+			<month value="*" />
+			<week value="*" />
+		</timing>
+		<command value="script/none/none.ps1" param="sample2" />
+		<enable value="true" />
+	</cron>
+  <cron name="none3">
+    <explain value="デバッグサンプル3" />
+    <timing>
+      <minutes value="0-9/2,10-19/3,20-29,30-39/1" />
+      <hour value="*" />
+      <day value="*" />
+      <month value="*" />
+      <week value="*" />
+    </timing>
+    <command value="script/none/none.ps1" param="sample3" />
+    <enable value="true" />
+  </cron>
+</setting>
