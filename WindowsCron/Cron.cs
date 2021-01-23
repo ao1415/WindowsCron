@@ -96,6 +96,7 @@ namespace WindowsCron
                 }
 
                 Thread.Yield();
+                Thread.Sleep(100);
             }
 
             Log.Logger.Info("監視スレッド終了");
